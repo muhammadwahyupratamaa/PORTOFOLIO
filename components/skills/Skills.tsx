@@ -88,26 +88,7 @@ export default function Skills() {
         text-white
         md:py-40
       "
-      style={{
-        background: `
-          radial-gradient(
-            circle at 15% 20%,
-            rgba(37, 99, 235, 0.18) 0%,
-            transparent 34%
-          ),
-          radial-gradient(
-            circle at 85% 70%,
-            rgba(14, 165, 233, 0.10) 0%,
-            transparent 32%
-          ),
-          linear-gradient(
-            135deg,
-            #020617 0%,
-            #07152d 50%,
-            #020b1c 100%
-          )
-        `,
-      }}
+      style={{ backgroundColor: "rgb(3 28 38 / 62%)" }}
     >
       {/* =====================================================
           AMBIENT LIGHT
@@ -145,20 +126,17 @@ export default function Skills() {
           HEADER
       ====================================================== */}
 
-      <div className="relative z-20 mx-auto max-w-6xl px-6">
+      <div className="relative z-20 mx-auto max-w-7xl px-5 md:px-8">
         <div
           className="
             flex
             flex-col
-            items-start
-            justify-between
-            gap-6
-            md:flex-row
-            md:items-end
+            items-center
+            text-center
           "
         >
           <div>
-            <div className="mb-5 flex items-center gap-3">
+            <div className="mb-6 flex items-center justify-center gap-3">
               <span className="h-px w-8 bg-blue-400/60" />
 
               <span
@@ -170,59 +148,43 @@ export default function Skills() {
                   text-blue-300/60
                 "
               >
-                My Stack
+                  Capabilities
               </span>
             </div>
 
             <h2
               className="
-                max-w-2xl
-                text-3xl
+                mx-auto
+                max-w-4xl
+                text-[clamp(2.5rem,7vw,6.5rem)]
                 font-semibold
                 tracking-[-0.05em]
                 text-white
                 md:text-6xl
               "
             >
-              Built with the
-              <span className="text-white/30"> right tools.</span>
+              Tools that move
+              <span className="block text-blue-200/75">ideas into products.</span>
             </h2>
           </div>
 
-          <p
-            className="
-              max-w-sm
-              text-sm
-              leading-7
-              text-white/40
-            "
-          >
-            Technologies I use to design, build, and ship digital products.
-          </p>
         </div>
+        <p className="mx-auto mt-7 max-w-md text-center text-sm leading-7 text-blue-50/70">
+          A working toolkit for interfaces, reliable services, and the delivery in between.
+        </p>
       </div>
 
       {/* =====================================================
           MARQUEES
       ====================================================== */}
 
-      <div className="relative z-20 mx-auto mt-12 grid max-w-6xl grid-cols-2 gap-2.5 px-4 sm:grid-cols-3 md:hidden">
+      <div className="relative z-20 mx-auto mt-12 grid max-w-2xl grid-cols-2 gap-3 px-5 sm:grid-cols-3 md:hidden">
         {[...frontend, ...backendAndTools].map((skill) => (
           <MobileSkillCard key={skill.title} skill={skill} />
         ))}
       </div>
 
-      <div
-        className="
-          relative
-          z-20
-          hidden
-          mt-24
-          space-y-4
-          md:block
-          md:mt-28
-        "
-      >
+      <div className="relative z-20 mt-16 hidden overflow-hidden md:block md:mt-24">
         {/* Left fade */}
 
         <div
@@ -234,7 +196,7 @@ export default function Skills() {
             z-30
             w-20
             bg-gradient-to-r
-            from-[#020617]
+            from-[#031c26]
             to-transparent
             md:w-56
           "
@@ -251,7 +213,7 @@ export default function Skills() {
             z-30
             w-20
             bg-gradient-to-l
-            from-[#020617]
+            from-[#031c26]
             to-transparent
             md:w-56
           "
@@ -261,13 +223,15 @@ export default function Skills() {
             FRONTEND
         ================================================== */}
 
-        <Marquee items={frontend} direction="left" speed="38s" />
+        <Marquee items={frontend} direction="left" speed="32s" />
 
         {/* =================================================
             BACKEND + TOOLS
         ================================================== */}
 
-        <Marquee items={backendAndTools} direction="right" speed="34s" />
+        <div className="relative mt-4">
+          <Marquee items={backendAndTools} direction="right" speed="30s" />
+        </div>
       </div>
     </section>
   );
@@ -275,15 +239,15 @@ export default function Skills() {
 
 function MobileSkillCard({ skill }: { skill: Skill }) {
   return (
-    <div className="flex min-w-0 items-center gap-2.5 rounded-xl border border-blue-200/[0.09] bg-blue-400/[0.035] px-3 py-3.5 backdrop-blur-sm">
+    <div className="flex min-w-0 items-center gap-2.5 rounded-2xl border border-blue-200/[0.16] bg-[#031c26]/55 px-3 py-4 shadow-lg shadow-blue-950/20 backdrop-blur-sm">
       <svg
         viewBox="0 0 24 24"
-        className="h-5 w-5 shrink-0 fill-blue-100/60"
+        className="h-5 w-5 shrink-0 fill-blue-100/85"
         aria-hidden="true"
       >
         <path d={skill.icon.path} />
       </svg>
-      <span className="truncate text-xs font-medium text-white/65">
+      <span className="truncate text-xs font-medium text-white/90">
         {skill.title}
       </span>
     </div>

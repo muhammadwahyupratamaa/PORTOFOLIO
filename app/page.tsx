@@ -43,31 +43,7 @@ export default function Home() {
           md:py-40
           md:px-6
         "
-        style={{
-          background: `
-            radial-gradient(
-              circle at 12% 15%,
-              rgba(37, 99, 235, 0.28) 0%,
-              transparent 32%
-            ),
-            radial-gradient(
-              circle at 88% 20%,
-              rgba(14, 165, 233, 0.18) 0%,
-              transparent 32%
-            ),
-            radial-gradient(
-              circle at 50% 100%,
-              rgba(30, 64, 175, 0.22) 0%,
-              transparent 42%
-            ),
-            linear-gradient(
-              135deg,
-              #020617 0%,
-              #07152d 45%,
-              #020b1c 100%
-            )
-          `,
-        }}
+        style={{ backgroundColor: "rgb(3 28 38 / 62%)" }}
       >
         {/* =================================================
             AMBIENT GLOW
@@ -274,7 +250,7 @@ export default function Home() {
               {/* Live Demo */}
 
               <a
-                href="https://brilianshop.netlify.app/"
+                href="http://103.127.96.192:9402/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="

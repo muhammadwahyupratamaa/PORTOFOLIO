@@ -38,31 +38,7 @@ export default function Contact() {
         text-white
         md:py-44
       "
-      style={{
-        background: `
-          radial-gradient(
-            circle at 50% 25%,
-            rgba(37, 99, 235, 0.18) 0%,
-            transparent 38%
-          ),
-          radial-gradient(
-            circle at 15% 85%,
-            rgba(14, 165, 233, 0.08) 0%,
-            transparent 30%
-          ),
-          radial-gradient(
-            circle at 90% 75%,
-            rgba(30, 64, 175, 0.10) 0%,
-            transparent 30%
-          ),
-          linear-gradient(
-            135deg,
-            #020617 0%,
-            #07152d 50%,
-            #020b1c 100%
-          )
-        `,
-      }}
+      style={{ backgroundColor: "rgb(3 28 38 / 62%)" }}
     >
       {/* =====================================================
           AMBIENT LIGHT

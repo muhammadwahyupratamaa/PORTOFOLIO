@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDownRight, Code2, Database, Layers3, Server } from "lucide-react";
+import { ArrowDownRight, Code2, Database, Download, Layers3, Server } from "lucide-react";
+import Image from "next/image";
 
 const capabilities = [
   {
@@ -30,6 +31,59 @@ const capabilities = [
   },
 ];
 
+const experience = [
+  {
+    period: "May 2026 — August 2026",
+    role: "Talent · Full-Stack Development",
+    company: "Koda · Depok, Indonesia",
+    summary:
+      "Building full-stack applications with React, Node.js, Go, PostgreSQL, and Docker. Built BrilianShop across its storefront, authentication, catalog, checkout, and REST APIs.",
+    highlights: [
+      "Developed scalable full-stack applications with React, JavaScript, Tailwind CSS, Node.js, Go, and PostgreSQL.",
+      "Built BrilianShop: authentication, product catalog, cart, wishlist, checkout flow, and order history.",
+      "Designed and integrated RESTful APIs for secure, efficient client–server communication.",
+      "Worked with PostgreSQL data modeling, relationships, queries, and Sequelize ORM.",
+      "Containerized development environments with Docker for consistent delivery.",
+      "Used Git, reusable component architecture, debugging, and clean-code practices in project-based collaboration.",
+    ],
+  },
+  {
+    period: "Feb 2025 — Feb 2026",
+    role: "Warehouse Worker",
+    company: "Yuan Neng Farmer Mesin Indonesia · South Lampung",
+    summary:
+      "Managed inventory movement while supporting product content, live-stream promotion, and the day-to-day coordination behind operations.",
+    highlights: [
+      "Maintained accurate inventory movement in a fast-paced warehouse environment.",
+      "Hosted live streams to promote products and engage customers.",
+      "Created product photography and promotional video content with operations and sales teams.",
+    ],
+  },
+];
+
+const education = [
+  {
+    period: "2020 — 2024",
+    school: "University of Baturaja",
+    program: "Bachelor of English Language Education · GPA 3.60",
+    highlights: [
+      "Active in BEM, HIMABING, and Bujang Gadis Kampus activities.",
+      "Built leadership, teamwork, and project coordination through student organizations.",
+      "Contributed to member development, faculty religious and social events, and event planning.",
+    ],
+  },
+  {
+    period: "May 2026 — August 2026",
+    school: "Koda",
+    program: "Full-Stack Web Development",
+    highlights: [
+      "Built applications with JavaScript, React, Node.js, Go, and PostgreSQL.",
+      "Worked with REST APIs, authentication, Sequelize, Docker, Git, and GitHub.",
+      "Applied database modeling, middleware, authorization, CRUD flows, and collaborative development.",
+    ],
+  },
+];
+
 export default function About() {
   return (
     <section
@@ -42,26 +96,7 @@ export default function About() {
         border-blue-400/[0.08]
         text-white
       "
-      style={{
-        background: `
-          radial-gradient(
-            circle at 85% 20%,
-            rgba(37, 99, 235, 0.18) 0%,
-            transparent 35%
-          ),
-          radial-gradient(
-            circle at 10% 75%,
-            rgba(14, 165, 233, 0.10) 0%,
-            transparent 30%
-          ),
-          linear-gradient(
-            135deg,
-            #020617 0%,
-            #07152d 48%,
-            #020b1c 100%
-          )
-        `,
-      }}
+      style={{ backgroundColor: "rgb(3 28 38 / 62%)" }}
     >
       {/* =====================================================
           AMBIENT BACKGROUND
@@ -153,10 +188,7 @@ export default function About() {
             HEADER
         ====================================================== */}
 
-        <div className="grid gap-10 md:gap-16 lg:grid-cols-[0.35fr_1fr]">
-          {/* Section label */}
-
-          <motion.div
+        <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{
               opacity: 1,
@@ -169,7 +201,7 @@ export default function About() {
             transition={{
               duration: 0.7,
             }}
-            className="flex items-start gap-3"
+            className="flex justify-center gap-3"
           >
             <span className="h-px w-8 bg-blue-400/70" />
 
@@ -179,17 +211,14 @@ export default function About() {
                 font-medium
                 uppercase
                 tracking-[0.3em]
-                text-blue-300/60
+                text-blue-200/90
               "
             >
               About
             </span>
-          </motion.div>
+        </motion.div>
 
-          {/* Main heading */}
-
-          <div>
-            <motion.h2
+        <motion.h2
               initial={{
                 opacity: 0,
                 y: 35,
@@ -207,37 +236,30 @@ export default function About() {
                 ease: [0.22, 1, 0.36, 1],
               }}
               className="
-                max-w-5xl
-                text-[2.5rem]
+                mx-auto
+                mt-8
+                max-w-[1200px]
+                text-center
+                text-[clamp(1.1rem,7vw,5.9rem)]
                 font-semibold
-                leading-[0.9]
+                leading-[0.94]
                 tracking-[-0.065em]
-                sm:text-5xl
-                md:text-[clamp(3rem,7vw,7rem)]
+                sm:mt-10
+                sm:text-[clamp(2rem,6.5vw,3rem)]
+                md:text-6xl
+                lg:text-[clamp(3.5rem,6vw,5.9rem)]
               "
             >
-              I build digital
-              <span className="block text-white/25">experiences</span>
-              <span
-                className="
-                  block
-                  bg-gradient-to-r
-                  from-white
-                  via-blue-200
-                  to-blue-400
-                  bg-clip-text
-                  text-transparent
-                "
-              >
-                with purpose.
+              <span className="block whitespace-nowrap">I build digital experiences</span>
+              <span className="mt-2 block whitespace-nowrap sm:mt-3">
+                with {" "}
+                <span className="bg-gradient-to-r from-white via-blue-200 to-blue-400 bg-clip-text text-transparent">
+                  purpose.
+                </span>
               </span>
-            </motion.h2>
+        </motion.h2>
 
-            {/* =================================================
-                INTRO
-            ================================================== */}
-
-            <motion.div
+        <motion.div
               initial={{
                 opacity: 0,
                 y: 25,
@@ -254,22 +276,17 @@ export default function About() {
                 duration: 0.8,
                 delay: 0.15,
               }}
-              className="
-                mt-10
-                grid
-                gap-8
-                border-t
-                border-blue-200/[0.10]
-                pt-8
-                md:grid-cols-[1fr_1fr]
-              "
+              className="mt-12 grid gap-8 border-t border-blue-200/[0.10] pt-8 md:mt-16 md:grid-cols-2 lg:grid-cols-[210px_minmax(0,1fr)_minmax(0,1fr)] lg:gap-12"
             >
+              <div className="relative mx-auto aspect-[4/5] w-full max-w-[210px] overflow-hidden rounded-2xl border border-blue-200/25 bg-[#031c26] shadow-2xl shadow-blue-950/60 md:row-span-2 lg:mx-0">
+                <Image src="/images/pra.png" alt="Muhammad Wahyu Pratama" fill sizes="(min-width: 1024px) 210px, 60vw" className="object-cover object-center" />
+              </div>
               <p
                 className="
-                  max-w-lg
+                  max-w-xl
                   text-lg
                   leading-8
-                  text-white/65
+                  text-white/90
                   md:text-xl
                 "
               >
@@ -277,12 +294,12 @@ export default function About() {
                 creating modern, responsive, and meaningful web experiences.
               </p>
 
-              <div className="max-w-md">
+              <div className="max-w-xl">
                 <p
                   className="
                     text-sm
                     leading-7
-                    text-blue-50/45
+                    text-blue-50/80
                   "
                 >
                   I enjoy working across the stack — from crafting interfaces
@@ -290,37 +307,86 @@ export default function About() {
                   about how everything works together.
                 </p>
 
-                <a
-                  href="#skills"
-                  className="
-                    group
-                    mt-6
-                    inline-flex
-                    items-center
-                    gap-3
-                    text-xs
-                    font-medium
-                    uppercase
-                    tracking-[0.2em]
-                    text-blue-300/60
-                    transition-colors
-                    hover:text-blue-200
-                  "
-                >
-                  What I work with
-                  <ArrowDownRight
-                    className="
-                      h-4
-                      w-4
-                      transition-transform
-                      duration-300
-                      group-hover:translate-x-1
-                      group-hover:translate-y-1
-                    "
-                  />
-                </a>
+                <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4">
+                  <a
+                    href="#skills"
+                    className="group inline-flex items-center gap-3 text-xs font-medium uppercase tracking-[0.2em] text-blue-200/90 transition-colors hover:text-blue-200"
+                  >
+                    What I work with
+                    <ArrowDownRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1" />
+                  </a>
+                  <a
+                    href="/Muhammad-Wahyu-Pratama-CV.pdf"
+                    download
+                    className="inline-flex items-center gap-2 rounded-full border border-blue-200/30 bg-blue-100/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-white transition-colors hover:bg-blue-200 hover:text-[#031c26]"
+                  >
+                    Download CV
+                    <Download className="h-3.5 w-3.5" />
+                  </a>
+                </div>
               </div>
-            </motion.div>
+        </motion.div>
+
+        <div className="mt-20 border-t border-blue-200/[0.10] pt-8 md:mt-32">
+          <div className="mb-8 flex items-center justify-between border-b border-blue-200/[0.10] pb-5">
+            <span className="text-[10px] uppercase tracking-[0.3em] text-blue-200/80">
+              Experience
+            </span>
+            <span className="text-[10px] uppercase tracking-[0.2em] text-blue-200/80">Selected roles</span>
+          </div>
+
+          <div className="divide-y divide-blue-200/[0.08]">
+            {experience.map((item, index) => (
+              <motion.div
+                key={item.role}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.65, delay: index * 0.1 }}
+                className="grid gap-4 py-7 md:grid-cols-[170px_1fr_minmax(20rem,1fr)] md:gap-8 md:py-9"
+              >
+                <span className="font-mono text-xs text-blue-200/80">{item.period}</span>
+                <div>
+                  <h3 className="text-xl font-medium tracking-tight text-white md:text-2xl">{item.role}</h3>
+                  <p className="mt-1 text-sm text-blue-100/85">{item.company}</p>
+                </div>
+                <div>
+                  <p className="max-w-md text-sm leading-7 text-white/80">{item.summary}</p>
+                  <ul className="mt-4 space-y-2 border-l border-blue-300/25 pl-4 text-sm leading-6 text-blue-50/75">
+                    {item.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-20 border-t border-blue-200/[0.10] pt-8 md:mt-32">
+          <div className="mb-8 flex items-center justify-between border-b border-blue-200/[0.10] pb-5">
+            <span className="text-[10px] uppercase tracking-[0.3em] text-blue-200/80">Education</span>
+            <span className="text-[10px] uppercase tracking-[0.2em] text-blue-200/80">Learning path</span>
+          </div>
+
+          <div className="divide-y divide-blue-200/[0.08]">
+            {education.map((item, index) => (
+              <motion.div
+                key={item.school}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.65, delay: index * 0.1 }}
+                className="grid gap-3 py-7 md:grid-cols-[170px_1fr] md:gap-8 md:py-9"
+              >
+                <span className="font-mono text-xs text-blue-200/80">{item.period}</span>
+                <div>
+                  <h3 className="text-xl font-medium tracking-tight text-white md:text-2xl">{item.school}</h3>
+                  <p className="mt-1 text-sm text-blue-100/85">{item.program}</p>
+                  <ul className="mt-4 space-y-2 border-l border-blue-300/25 pl-4 text-sm leading-6 text-blue-50/75">
+                    {item.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
 
@@ -360,16 +426,16 @@ export default function About() {
                 text-[10px]
                 uppercase
                 tracking-[0.3em]
-                text-blue-300/40
+                text-blue-200/80
               "
             >
               What I do
             </span>
 
-            <Code2 className="h-4 w-4 text-blue-300/30" />
+            <Code2 className="h-4 w-4 text-blue-200/75" />
           </motion.div>
 
-          <div className="divide-y divide-blue-200/[0.08]">
+          <div className="grid gap-4 md:grid-cols-3">
             {capabilities.map((item, index) => {
               const Icon = item.icon;
 
@@ -394,14 +460,18 @@ export default function About() {
                   }}
                   className="
                     group
-                    grid
-                    gap-6
-                    py-8
+                    flex
+                    h-full
+                    flex-col
+                    rounded-2xl
+                    border
+                    border-blue-200/[0.12]
+                    bg-[#031c26]/45
+                    p-6
                     transition-colors
                     duration-300
-                    md:grid-cols-[80px_0.7fr_1fr_auto]
-                    md:items-center
-                    md:py-10
+                    hover:border-blue-200/30
+                    hover:bg-blue-950/35
                   "
                 >
                   {/* Number */}
@@ -410,7 +480,7 @@ export default function About() {
                     className="
                       font-mono
                       text-xs
-                      text-blue-300/25
+                      text-blue-200/70
                     "
                   >
                     {item.number}
@@ -418,7 +488,7 @@ export default function About() {
 
                   {/* Title */}
 
-                  <div className="flex items-center gap-4">
+                  <div className="mt-6 flex items-center gap-4">
                     <div
                       className="
                         flex
@@ -441,7 +511,7 @@ export default function About() {
                         className="
                           h-4
                           w-4
-                          text-blue-300/50
+                          text-blue-200/85
                           transition-colors
                           duration-300
                           group-hover:text-blue-200
@@ -454,7 +524,7 @@ export default function About() {
                         text-2xl
                         font-medium
                         tracking-tight
-                        text-white/80
+                        text-white
                         transition-colors
                         duration-300
                         group-hover:text-white
@@ -469,10 +539,10 @@ export default function About() {
 
                   <p
                     className="
-                      max-w-md
+                      mt-6
                       text-sm
                       leading-7
-                      text-white/30
+                      text-white/75
                       transition-colors
                       duration-300
                       group-hover:text-white/50
@@ -488,7 +558,7 @@ export default function About() {
                       flex
                       flex-wrap
                       gap-2
-                      md:justify-end
+                      mt-6
                     "
                   >
                     {item.technologies.map((technology) => (
@@ -504,7 +574,7 @@ export default function About() {
                           text-[9px]
                           uppercase
                           tracking-[0.15em]
-                          text-blue-100/35
+                          text-blue-50/80
                           transition-all
                           duration-300
                           group-hover:border-blue-300/20
@@ -558,13 +628,13 @@ export default function About() {
               font-medium
               leading-relaxed
               tracking-tight
-              text-white/70
+              text-white/90
               md:text-4xl
               md:leading-tight
             "
           >
             Good software isn&apos;t only about making things work.
-            <span className="text-blue-200/25">
+            <span className="text-blue-100/75">
               {" "}
               It&apos;s about making them feel right.
             </span>
