@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
-interface BrilianItem {
+export interface GalleryItem {
   id: string;
   title: string;
   category: string;
@@ -14,7 +14,7 @@ interface BrilianItem {
   alt: string;
 }
 
-const items: BrilianItem[] = [
+const items: GalleryItem[] = [
   {
     id: "01",
     title: "Store",
@@ -57,11 +57,17 @@ const items: BrilianItem[] = [
   },
 ];
 
-export function ElasticGallery() {
-  const [activeId, setActiveId] = useState("04");
+export function ElasticGallery({
+  items: galleryItems = items,
+  initialActiveId = "04",
+}: {
+  items?: GalleryItem[];
+  initialActiveId?: string;
+}) {
+  const [activeId, setActiveId] = useState(initialActiveId);
 
-  const activeIndex = items.findIndex((item) => item.id === activeId);
-  const activeItem = items[activeIndex];
+  const activeIndex = galleryItems.findIndex((item) => item.id === activeId);
+  const activeItem = galleryItems[activeIndex];
 
   return (
     <section className="w-full">
@@ -96,7 +102,7 @@ export function ElasticGallery() {
                   {activeItem.category}
                 </span>
                 <span className="text-[9px] tracking-[0.2em] text-white/30">
-                  {activeItem.id} / 05
+                  {activeItem.id} / {String(galleryItems.length).padStart(2, "0")}
                 </span>
               </div>
               <h3 className="text-2xl font-semibold tracking-[-0.04em] text-white">
@@ -109,7 +115,7 @@ export function ElasticGallery() {
           </div>
 
           <div className="mt-2.5 grid grid-cols-5 gap-1.5">
-            {items.map((item) => {
+            {galleryItems.map((item) => {
               const isActive = item.id === activeId;
 
               return (
@@ -137,7 +143,7 @@ export function ElasticGallery() {
         </div>
 
         <div className="hidden h-[620px] w-full gap-3 md:flex">
-          {items.map((item) => {
+          {galleryItems.map((item) => {
             const isActive = activeId === item.id;
 
             return (
@@ -371,13 +377,13 @@ export function ElasticGallery() {
             <div
               className="h-px bg-white/60 transition-all duration-700"
               style={{
-                width: `${((activeIndex + 1) / items.length) * 100}%`,
+                width: `${((activeIndex + 1) / galleryItems.length) * 100}%`,
               }}
             />
           </div>
 
           <span className="text-[10px] font-medium tracking-[0.2em] text-white/30">
-            05
+            {String(galleryItems.length).padStart(2, "0")}
           </span>
         </div>
       </div>
