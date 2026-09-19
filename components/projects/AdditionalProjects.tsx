@@ -30,7 +30,10 @@ const projects = [
       "A URL shortener with authenticated link management, custom slugs, pagination, soft deletion, and Redis caching.",
     technologies: ["React", "Express.js", "PostgreSQL", "Redis", "Zod"],
     images: ["shortlink-landing.png", "shortlink-dashboard.png", "shortlink-profile.png"],
-    links: [],
+    links: [
+      { label: "Frontend", href: "https://github.com/muhammadwahyupratamaa/koda-b8-phase3-frontend" },
+      { label: "Backend", href: "https://github.com/muhammadwahyupratamaa/koda-b8-phase3-backend" },
+    ],
   },
 ];
 
