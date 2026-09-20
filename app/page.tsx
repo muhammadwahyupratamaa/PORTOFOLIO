@@ -5,6 +5,7 @@ import About from "@/components/about/About";
 import Skills from "@/components/skills/Skills";
 import { ArrowUpRight } from "lucide-react";
 import Contact from "@/components/contact/Contact";
+import { AdditionalProjects } from "@/components/projects/AdditionalProjects";
 
 export default function Home() {
   return (
@@ -157,9 +158,8 @@ export default function Home() {
 
             <div className="max-w-sm">
               <p className="text-sm leading-6 text-blue-50/55">
-                A fullstack e-commerce platform built across customer
-                experience, administration, backend services, and
-                infrastructure.
+                A full-stack e-commerce platform with customer, admin, and
+                backend workflows for a real-world marketplace experience.
               </p>
             </div>
           </div>
@@ -211,9 +211,9 @@ export default function Home() {
               <div className="flex flex-wrap gap-2">
                 {[
                   "React",
-                  "Next.js",
+                  "Express.js",
                   "Node.js",
-                  "Go",
+                  "JWT",
                   "PostgreSQL",
                   "Sequelize",
                   "Docker",
@@ -347,6 +347,8 @@ export default function Home() {
               </a>
             </div>
           </div>
+
+          <AdditionalProjects />
         </div>
       </section>
 
