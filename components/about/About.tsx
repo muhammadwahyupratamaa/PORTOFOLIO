@@ -33,30 +33,64 @@ const capabilities = [
 
 const experience = [
   {
-    period: "May 2026 — August 2026",
-    role: "Talent · Full-Stack Development",
-    company: "Koda · Depok, Indonesia",
+    period: "September 2026 — Present",
+    role: "Backend Developer Intern",
+    company: "NashTa Group",
     summary:
-      "Building full-stack applications with React, Node.js, Go, PostgreSQL, and Docker. Built BrilianShop across its storefront, authentication, catalog, checkout, and REST APIs.",
+      "Contributing to an electronics POS system, with a focus on PostgreSQL data design, inventory workflows, and API contracts.",
+    highlights: [
+      "Designed PostgreSQL data models and Sequelize migrations for products, customers, transactions, payments, and inventory.",
+      "Created seed data and inventory movement tracking for sales, restocking, returns, and stock adjustments.",
+      "Contributed to checkout, membership, transaction, payment, inventory, and monthly-report API contracts.",
+    ],
+  },
+  {
+    period: "May 2026 — August 2026",
+    role: "Full Stack Web Developer",
+    company: "Koda Tech Academy · Depok, Indonesia",
+    summary:
+      "Completed an intensive full-stack program covering React.js, Golang, PostgreSQL, Docker, and RESTful API development.",
     highlights: [
       "Developed scalable full-stack applications with React, JavaScript, Tailwind CSS, Node.js, Go, and PostgreSQL.",
-      "Built BrilianShop: authentication, product catalog, cart, wishlist, checkout flow, and order history.",
+      "Built full-stack and backend applications, including an e-wallet system, contact management API, and e-commerce platform.",
       "Designed and integrated RESTful APIs for secure, efficient client–server communication.",
       "Worked with PostgreSQL data modeling, relationships, queries, and Sequelize ORM.",
       "Containerized development environments with Docker for consistent delivery.",
-      "Used Git, reusable component architecture, debugging, and clean-code practices in project-based collaboration.",
+      "Collaborated through code reviews, debugging, problem-solving sessions, and project discussions.",
     ],
   },
   {
     period: "Feb 2025 — Feb 2026",
-    role: "Warehouse Worker",
-    company: "Yuan Neng Farmer Mesin Indonesia · South Lampung",
+    role: "Hostlive & Warehouse Staff",
+    company: "PT Yuanneng Farmer Mesin Indonesia · Lampung, Indonesia",
     summary:
       "Managed inventory movement while supporting product content, live-stream promotion, and the day-to-day coordination behind operations.",
     highlights: [
-      "Maintained accurate inventory movement in a fast-paced warehouse environment.",
-      "Hosted live streams to promote products and engage customers.",
-      "Created product photography and promotional video content with operations and sales teams.",
+      "Hosted live selling sessions and created promotional content for social media campaigns.",
+      "Managed inventory, outgoing shipments, and warehouse organization.",
+      "Collaborated with the team to keep operations efficient and fulfill orders on time.",
+    ],
+  },
+  {
+    period: "Aug 2022 — Dec 2022",
+    role: "Teaching Intern",
+    company: "Kampus Mengajar Batch 4 · Sumatera Selatan, Indonesia",
+    summary:
+      "Supported classroom learning, school administration, and community education programs.",
+    highlights: [
+      "Assisted teachers with literacy and numeracy learning activities.",
+      "Supported school administration and documentation processes.",
+      "Developed digital learning media and participated in health-awareness programs.",
+    ],
+  },
+  {
+    period: "Aug 2017 — Oct 2017",
+    role: "Electrical Technician Intern",
+    company: "PT New Hope Indonesia · Lampung Selatan, Indonesia",
+    summary:
+      "Assisted electrical maintenance work in factory operations.",
+    highlights: [
+      "Supported technicians during equipment inspection and repair.",
     ],
   },
 ];
@@ -74,8 +108,8 @@ const education = [
   },
   {
     period: "May 2026 — August 2026",
-    school: "Koda",
-    program: "Full-Stack Web Development",
+    school: "Koda Tech Academy",
+    program: "Fullstack Web Developer Intensive Program",
     highlights: [
       "Built applications with JavaScript, React, Node.js, Go, and PostgreSQL.",
       "Worked with REST APIs, authentication, Sequelize, Docker, Git, and GitHub.",
@@ -250,11 +284,11 @@ export default function About() {
                 lg:text-[clamp(3.5rem,6vw,5.9rem)]
               "
             >
-              <span className="block whitespace-nowrap">I build digital experiences</span>
+              <span className="block whitespace-nowrap">Full-stack applications</span>
               <span className="mt-2 block whitespace-nowrap sm:mt-3">
                 with {" "}
                 <span className="bg-gradient-to-r from-white via-blue-200 to-blue-400 bg-clip-text text-transparent">
-                  purpose.
+                  built with purpose.
                 </span>
               </span>
         </motion.h2>
@@ -276,7 +310,7 @@ export default function About() {
                 duration: 0.8,
                 delay: 0.15,
               }}
-              className="mt-12 grid gap-8 border-t border-blue-200/[0.10] pt-8 md:mt-16 md:grid-cols-2 lg:grid-cols-[210px_minmax(0,1fr)_minmax(0,1fr)] lg:gap-12"
+              className="mt-12 grid gap-8 border-t border-blue-200/[0.18] pt-8 md:mt-16 md:grid-cols-2 lg:grid-cols-[210px_minmax(0,1fr)_minmax(0,1fr)] lg:gap-12"
             >
               <div className="relative mx-auto aspect-[4/5] w-full max-w-[210px] overflow-hidden rounded-2xl border border-blue-200/25 bg-[#031c26] shadow-2xl shadow-blue-950/60 md:row-span-2 lg:mx-0">
                 <Image src="/images/pra.png" alt="Muhammad Wahyu Pratama" fill sizes="(min-width: 1024px) 210px, 60vw" className="object-cover object-center" />
@@ -290,8 +324,9 @@ export default function About() {
                   md:text-xl
                 "
               >
-                I&apos;m Muhammad Wahyu Pratama, a fullstack developer focused on
-                creating modern, responsive, and meaningful web experiences.
+                I&apos;m Muhammad Wahyu Pratama, a Full Stack Web Developer with
+                hands-on experience building modern web applications with
+                React.js, Golang, Express, and PostgreSQL.
               </p>
 
               <div className="max-w-xl">
@@ -302,9 +337,11 @@ export default function About() {
                     text-blue-50/80
                   "
                 >
-                  I enjoy working across the stack — from crafting interfaces
-                  and interactions to building APIs, managing data, and thinking
-                  about how everything works together.
+                  I build RESTful APIs, design relational databases, and
+                  implement authentication and transaction workflows through
+                  real-world projects. I&apos;m comfortable with Docker, Git,
+                  Linux, and collaborative development, and focused on clean,
+                  maintainable code that keeps getting better over time.
                 </p>
 
                 <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -327,15 +364,15 @@ export default function About() {
               </div>
         </motion.div>
 
-        <div className="mt-20 border-t border-blue-200/[0.10] pt-8 md:mt-32">
-          <div className="mb-8 flex items-center justify-between border-b border-blue-200/[0.10] pb-5">
+        <div className="mt-20 border-t border-blue-200/[0.18] pt-8 md:mt-32">
+          <div className="mb-8 flex items-center justify-between border-b border-blue-200/[0.18] pb-5">
             <span className="text-[10px] uppercase tracking-[0.3em] text-blue-200/80">
               Experience
             </span>
             <span className="text-[10px] uppercase tracking-[0.2em] text-blue-200/80">Selected roles</span>
           </div>
 
-          <div className="divide-y divide-blue-200/[0.08]">
+          <div className="divide-y divide-blue-200/[0.18]">
             {experience.map((item, index) => (
               <motion.div
                 key={item.role}
@@ -361,13 +398,13 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-20 border-t border-blue-200/[0.10] pt-8 md:mt-32">
-          <div className="mb-8 flex items-center justify-between border-b border-blue-200/[0.10] pb-5">
+        <div className="mt-20 border-t border-blue-200/[0.18] pt-8 md:mt-32">
+          <div className="mb-8 flex items-center justify-between border-b border-blue-200/[0.18] pb-5">
             <span className="text-[10px] uppercase tracking-[0.3em] text-blue-200/80">Education</span>
             <span className="text-[10px] uppercase tracking-[0.2em] text-blue-200/80">Learning path</span>
           </div>
 
-          <div className="divide-y divide-blue-200/[0.08]">
+          <div className="divide-y divide-blue-200/[0.18]">
             {education.map((item, index) => (
               <motion.div
                 key={item.school}
@@ -417,7 +454,7 @@ export default function About() {
               items-center
               justify-between
               border-b
-              border-blue-200/[0.10]
+              border-blue-200/[0.18]
               pb-5
             "
           >
@@ -615,7 +652,7 @@ export default function About() {
           className="
             mt-20
             border-t
-            border-blue-200/[0.10]
+            border-blue-200/[0.18]
             pt-10
             lg:mt-44
             md:mt-32

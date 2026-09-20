@@ -18,7 +18,7 @@ const socials = [
   },
   {
     label: "WhatsApp",
-    href: "https://wa.me/6289530625746",
+    href: "https://wa.me/6282372113442",
     icon: FaWhatsapp,
   },
 ];
@@ -314,7 +314,7 @@ export default function Contact() {
                   {/* WhatsApp */}
 
                   <a
-                    href="https://wa.me/6289530625746"
+                    href="https://wa.me/6282372113442"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
@@ -459,6 +459,12 @@ export default function Contact() {
               );
             })}
           </div>
+          <a
+            href="mailto:muhammad123wahyu123@gmail.com"
+            className="break-all text-sm text-white/45 transition-colors hover:text-blue-200"
+          >
+            muhammad123wahyu123@gmail.com
+          </a>
         </motion.div>
       </div>
     </section>

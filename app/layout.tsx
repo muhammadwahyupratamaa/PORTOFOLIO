@@ -5,8 +5,8 @@ import SiteIntro from "@/components/ui/site-intro";
 import SmokeBackground from "@/components/ui/smoke-background";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Personal portfolio",
+  title: "Muhammad Wahyu Pratama | Full Stack Web Developer",
+  description: "Full Stack Web Developer specializing in React, Golang, PostgreSQL, and Express.",
 };
 
 export default function RootLayout({

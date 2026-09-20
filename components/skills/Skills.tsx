@@ -12,6 +12,11 @@ import {
   siDocker,
   siGit,
   siGithub,
+  siExpress,
+  siReactrouter,
+  siRedis,
+  siSwagger,
+  siZod,
   siFigma,
 } from "simple-icons";
 
@@ -26,6 +31,10 @@ const frontend: Skill[] = [
   {
     title: "React",
     icon: siReact,
+  },
+  {
+    title: "React Router",
+    icon: siReactrouter,
   },
   {
     title: "Next.js",
@@ -51,12 +60,28 @@ const backendAndTools: Skill[] = [
     icon: siNodedotjs,
   },
   {
+    title: "Express.js",
+    icon: siExpress,
+  },
+  {
     title: "Go",
     icon: siGo,
   },
   {
     title: "PostgreSQL",
     icon: siPostgresql,
+  },
+  {
+    title: "Redis",
+    icon: siRedis,
+  },
+  {
+    title: "Swagger",
+    icon: siSwagger,
+  },
+  {
+    title: "Zod",
+    icon: siZod,
   },
   {
     title: "Docker",

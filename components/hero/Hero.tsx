@@ -331,7 +331,7 @@ export default function Hero() {
             md:text-[10px]
           "
         >
-          Fullstack Developer
+          Full Stack Web Developer
         </span>
       </div>
 
@@ -372,7 +372,7 @@ export default function Hero() {
             text-white/80
           "
         >
-          Indonesia
+          Jakarta, Indonesia
         </span>
       </div>
 
@@ -451,7 +451,7 @@ export default function Hero() {
             text-white/60
           "
         >
-          React · Next.js · Node · Go
+          React · Golang · PostgreSQL · Express
         </span>
       </div>
 
