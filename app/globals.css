@@ -138,6 +138,12 @@
   }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 /* Full-page rocket intro shown before the landing page is revealed. */
 .site-intro {
   position: fixed;

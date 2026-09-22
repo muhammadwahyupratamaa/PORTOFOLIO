@@ -172,12 +172,11 @@ export default function Home() {
             className="
               rounded-[1.35rem]
               border
-              border-blue-300/10
-              bg-blue-950/20
+              border-blue-300/25
+              bg-[#07384a]
               p-1
               shadow-2xl
               shadow-blue-950/40
-              backdrop-blur-sm
             "
           >
             <ElasticGallery />

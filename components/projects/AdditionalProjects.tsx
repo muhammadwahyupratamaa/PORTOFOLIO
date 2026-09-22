@@ -68,17 +68,19 @@ export function AdditionalProjects() {
                 </div>
               </div>
             </div>
-            <ElasticGallery
-              initialActiveId="01"
-              items={project.images.map((image, imageIndex): GalleryItem => ({
-                id: String(imageIndex + 1).padStart(2, "0"),
-                title: `${project.name} ${imageIndex + 1}`,
-                category: "Project screen",
-                description: project.description,
-                src: `/projects/${image}`,
-                alt: `${project.name} screenshot ${imageIndex + 1}`,
-              }))}
-            />
+            <div className="rounded-[1.35rem] border border-blue-300/25 bg-[#07384a] p-1 shadow-2xl shadow-blue-950/40">
+              <ElasticGallery
+                initialActiveId="01"
+                items={project.images.map((image, imageIndex): GalleryItem => ({
+                  id: String(imageIndex + 1).padStart(2, "0"),
+                  title: `${project.name} ${imageIndex + 1}`,
+                  category: "Project screen",
+                  description: project.description,
+                  src: `/projects/${image}`,
+                  alt: `${project.name} screenshot ${imageIndex + 1}`,
+                }))}
+              />
+            </div>
             {project.links.length > 0 && (
               <div className="mt-8 flex flex-wrap gap-2.5 border-t border-blue-200/10 pt-6">
                 {project.links.map((link) => (
