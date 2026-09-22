@@ -168,7 +168,7 @@ export default function Contact() {
                     font-light
                     tracking-[-0.055em]
                     text-white
-                    md:text-8xl
+                    md:text-4xl
                     lg:text-[9rem]
                   "
                 >
