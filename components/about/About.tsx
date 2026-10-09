@@ -33,7 +33,7 @@ const capabilities = [
 
 const experience = [
   {
-    period: "September 2026 — Present",
+    period: "September 2026 — October 2026",
     role: "Backend Developer Intern",
     company: "NashTa Group",
     summary:
