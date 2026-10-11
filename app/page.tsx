@@ -249,7 +249,7 @@ export default function Home() {
               {/* Live Demo */}
 
               <a
-                href="http://103.127.96.192:9402/"
+                href="https://brilianshop.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
