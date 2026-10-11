@@ -365,7 +365,7 @@ export default function Home() {
         <div className="mx-auto w-full max-w-5xl px-6 pb-28 pt-12 md:py-12">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-muted-foreground">
-              © 2026 My Portfolio. All rights reserved.
+              © 2026 Muhammad Wahyu Pratama. All rights reserved..
             </p>
 
             <div className="flex gap-4 text-gray-500 text-sm">
