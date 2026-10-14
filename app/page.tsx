@@ -282,7 +282,7 @@ export default function Home() {
               {/* Frontend */}
 
               <a
-                href="https://github.com/muhammadwahyupratamaa/koda-b8-react"
+                href="https://github.com/muhammadwahyupratamaa/brilianshop"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
