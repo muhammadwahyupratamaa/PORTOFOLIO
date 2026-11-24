@@ -41,11 +41,8 @@ const projects = [
     description:
       "Website yang saya bangun bersama dua rekan untuk membantu calon pelanggan di Jakarta Selatan melihat paket internet rumah, mencari informasi area layanan, dan menghubungi sales melalui WhatsApp. Proyek ini masih dalam tahap pengembangan.",
     technologies: ["Nuxt 4", "Vue", "TypeScript", "Nuxt UI", "Tailwind CSS", "Nuxt Content", "Nuxt Studio", "Cloudflare Workers", "D1"],
-    images: ["xl-home-desktop.png", "xl-home-mobile.png"],
-    links: [
-      { label: "Live Demo", href: "https://layananxlhome.com" },
-      { label: "GitHub", href: "https://github.com/layanan-xl-home/website" },
-    ],
+    images: ["xl-home-desktop.png", "xl-home-mobile.png", "xl-home-responsive-showcase.png"],
+    links: [{ label: "Live Demo", href: "https://layananxlhome.com" }],
   },
 ];
 
