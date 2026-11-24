@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Code2,
@@ -279,36 +280,18 @@ export default function LiquidGlassNavbar() {
 
             <Link
               href="#home"
+              aria-label="Pra — home"
               className="
                 group
                 flex
                 items-center
-                gap-2
-                text-xl
-                font-bold
-                tracking-tight
-                text-gray-900
+                rounded-xl
                 transition-opacity
                 duration-300
                 hover:opacity-70
-                dark:text-white
-                md:text-2xl
               "
             >
-              <span>Portfolio</span>
-
-              <span
-                className="
-                  h-2
-                  w-2
-                  rounded-full
-                  bg-blue-500
-                  shadow-[0_0_12px_rgba(59,130,246,0.7)]
-                  transition-transform
-                  duration-300
-                  group-hover:scale-125
-                "
-              />
+              <Image src="/pra-mark.svg" alt="Pra" width={40} height={40} priority className="transition-transform duration-300 group-hover:scale-105" />
             </Link>
 
             {/* =================================================
