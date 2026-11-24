@@ -7,6 +7,15 @@ import { ArrowUpRight } from "lucide-react";
 const projects = [
   {
     number: "02",
+    name: "Layanan XL HOME",
+    description:
+      "Website yang saya bangun bersama dua rekan untuk membantu calon pelanggan di Jakarta Selatan melihat paket internet rumah, mencari informasi area layanan, dan menghubungi sales melalui WhatsApp. Proyek ini masih dalam tahap pengembangan.",
+    technologies: ["Nuxt 4", "Vue", "TypeScript", "Nuxt UI", "Tailwind CSS", "Nuxt Content", "Nuxt Studio", "Cloudflare Workers", "D1"],
+    images: ["xl-home-desktop.png", "xl-home-mobile.png", "xl-home-responsive-showcase.png"],
+    links: [{ label: "Live Demo", href: "https://layananxlhome.com" }],
+  },
+  {
+    number: "03",
     name: "LamarLog",
     description:
       "A personal job application tracker with authentication, dashboard summaries, search, filters, and status history.",
@@ -24,7 +33,7 @@ const projects = [
     ],
   },
   {
-    number: "03",
+    number: "04",
     name: "ShortLink",
     description:
       "A URL shortener with authenticated link management, custom slugs, pagination, soft deletion, and Redis caching.",
@@ -34,15 +43,6 @@ const projects = [
       { label: "Frontend", href: "https://github.com/muhammadwahyupratamaa/koda-b8-phase3-frontend" },
       { label: "Backend", href: "https://github.com/muhammadwahyupratamaa/koda-b8-phase3-backend" },
     ],
-  },
-  {
-    number: "04",
-    name: "Layanan XL HOME",
-    description:
-      "Website yang saya bangun bersama dua rekan untuk membantu calon pelanggan di Jakarta Selatan melihat paket internet rumah, mencari informasi area layanan, dan menghubungi sales melalui WhatsApp. Proyek ini masih dalam tahap pengembangan.",
-    technologies: ["Nuxt 4", "Vue", "TypeScript", "Nuxt UI", "Tailwind CSS", "Nuxt Content", "Nuxt Studio", "Cloudflare Workers", "D1"],
-    images: ["xl-home-desktop.png", "xl-home-mobile.png", "xl-home-responsive-showcase.png"],
-    links: [{ label: "Live Demo", href: "https://layananxlhome.com" }],
   },
 ];
 
