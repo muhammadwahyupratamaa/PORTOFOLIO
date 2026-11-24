@@ -35,6 +35,18 @@ const projects = [
       { label: "Backend", href: "https://github.com/muhammadwahyupratamaa/koda-b8-phase3-backend" },
     ],
   },
+  {
+    number: "04",
+    name: "Layanan XL HOME",
+    description:
+      "Website yang saya bangun bersama dua rekan untuk membantu calon pelanggan di Jakarta Selatan melihat paket internet rumah, mencari informasi area layanan, dan menghubungi sales melalui WhatsApp. Proyek ini masih dalam tahap pengembangan.",
+    technologies: ["Nuxt 4", "Vue", "TypeScript", "Nuxt UI", "Tailwind CSS", "Nuxt Content", "Nuxt Studio", "Cloudflare Workers", "D1"],
+    images: ["xl-home-desktop.png", "xl-home-mobile.png"],
+    links: [
+      { label: "Live Demo", href: "https://layananxlhome.com" },
+      { label: "GitHub", href: "https://github.com/layanan-xl-home/website" },
+    ],
+  },
 ];
 
 export function AdditionalProjects() {
