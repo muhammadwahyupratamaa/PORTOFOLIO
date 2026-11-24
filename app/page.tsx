@@ -219,23 +219,7 @@ export default function Home() {
                 ].map((tech) => (
                   <span
                     key={tech}
-                    className="
-                      rounded-full
-                      border
-                      border-blue-300/15
-                      bg-blue-400/[0.05]
-                      px-3
-                      py-1.5
-                      text-[10px]
-                      font-medium
-                      text-blue-50/65
-                      backdrop-blur-sm
-                      transition-all
-                      duration-300
-                      hover:border-blue-300/30
-                      hover:bg-blue-400/[0.1]
-                      hover:text-white
-                    "
+                    className="rounded-full border border-blue-200/[0.18] bg-blue-400/[0.06] px-3 py-1 text-[10px] font-medium text-blue-50/80"
                   >
                     {tech}
                   </span>
