@@ -3,6 +3,9 @@
 import {
   siReact,
   siNextdotjs,
+  siNuxt,
+  siVuedotjs,
+  siTypescript,
   siSequelize,
   siTailwindcss,
   siJavascript,
@@ -18,6 +21,8 @@ import {
   siSwagger,
   siZod,
   siFigma,
+  siCloudflare,
+  siCloudflareworkers,
 } from "simple-icons";
 
 type Skill = {
@@ -39,6 +44,18 @@ const frontend: Skill[] = [
   {
     title: "Next.js",
     icon: siNextdotjs,
+  },
+  {
+    title: "Vue.js",
+    icon: siVuedotjs,
+  },
+  {
+    title: "Nuxt",
+    icon: siNuxt,
+  },
+  {
+    title: "TypeScript",
+    icon: siTypescript,
   },
   {
     title: "Sequelize",
@@ -86,6 +103,14 @@ const backendAndTools: Skill[] = [
   {
     title: "Docker",
     icon: siDocker,
+  },
+  {
+    title: "Cloudflare Workers",
+    icon: siCloudflareworkers,
+  },
+  {
+    title: "Cloudflare D1",
+    icon: siCloudflare,
   },
   {
     title: "Git",

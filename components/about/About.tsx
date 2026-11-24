@@ -312,7 +312,7 @@ export default function About() {
               }}
               className="mt-12 grid gap-8 border-t border-blue-200/[0.18] pt-8 md:mt-16 md:grid-cols-2 lg:grid-cols-[210px_minmax(0,1fr)_minmax(0,1fr)] lg:gap-12"
             >
-              <div className="relative mx-auto aspect-[4/5] w-full max-w-[210px] overflow-hidden rounded-2xl border border-blue-200/25 bg-[#031c26] shadow-2xl shadow-blue-950/60 md:row-span-2 lg:mx-0">
+              <div className="relative mx-auto aspect-square w-full max-w-[210px] overflow-hidden rounded-2xl border border-blue-200/25 bg-[#031c26] shadow-2xl shadow-blue-950/60 md:row-span-2 md:aspect-[4/5] lg:mx-0">
                 <Image src="/images/pra.png" alt="Muhammad Wahyu Pratama" fill sizes="(min-width: 1024px) 210px, 60vw" className="object-cover object-center" />
               </div>
               <p
